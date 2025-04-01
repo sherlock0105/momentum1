@@ -1,0 +1,33 @@
+/* @import "reset.css"; */
+@import "img.css";
+@import "root.css";
+@import "quote.css";
+@import "clock.css";
+@import "btn.css";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: var(--font-default);
+  color: white;
+  flex-direction: column;
+  transition: background-image 2s ease-in;
+}
+
+#greeting {
+  font-size: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.weakly {
+  opacity: 0.9;
+}

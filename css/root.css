@@ -1,0 +1,5 @@
+:root {
+  --font-default: -apple-system, BlinkMacSystemFont,
+    "Neue Haas Grotesk Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --font-clock: 500 9.5rem var(--font-default);
+}

@@ -1,0 +1,5 @@
+#clock {
+  font: var(--font-clock);
+  text-shadow: #007bff 1px 0 10px;
+  margin: 20px 0px;
+}

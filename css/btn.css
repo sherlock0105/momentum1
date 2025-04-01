@@ -1,0 +1,96 @@
+#login-form input {
+  text-align: center;
+  font-size: 40px;
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 10px;
+}
+
+#login-form input::placeholder {
+  color: white;
+  font-size: 50px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#login-form input:focus::placeholder {
+  opacity: 0.5;
+  font-size: 50px;
+}
+
+#login-form input:focus {
+  outline: none; /* 포커스 시 테두리 제거 */
+}
+
+button {
+  background-color: transparent;
+  padding: 10px;
+  font-size: 15px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+/* 로그아웃 버튼 스타일 */
+#logout {
+  position: absolute; /* 우측 상단 고정 */
+  top: 10px; /* 상단에서 10px */
+  right: 10px; /* 우측에서 10px */
+}
+
+#logout:hover {
+  transform: translateY(0.3);
+}
+
+.btn-carrot {
+  position: absolute;
+  top: 10px; /* 상단에서 10px */
+  right: 60px;
+}
+
+/* 당근을 흔들어보자.. */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  20% {
+    transform: translateX(-8px) rotate(-8deg);
+  }
+  40% {
+    transform: translateX(8px) rotate(8deg);
+  }
+  60% {
+    transform: translateX(-6px) rotate(-6deg);
+  }
+  80% {
+    transform: translateX(6px) rotate(6deg);
+  }
+}
+
+.btn-carrot:hover {
+  animation: shake 0.8s infinite ease-in-out;
+  color: #ff6347;
+  will-change: transform;
+}
+
+#change-bg-btn {
+  position: absolute;
+  bottom: 1px;
+  left: 1%;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+#weather {
+  margin: 20px;
+  display: flex;
+  font-weight: 600;
+  position: absolute;
+  top: 1px;
+  flex-direction: column;
+  left: 1px;
+}

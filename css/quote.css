@@ -1,0 +1,18 @@
+#quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0; /* 화면 하단에 배치 */
+  width: 100%; /* 가로 폭을 100%로 설정하여 가운데 정렬 */
+}
+
+#quote span {
+  font-size: 23px;
+}
+
+#quote span:last-child {
+  opacity: 0.8;
+  margin: 20px 0px;
+}

@@ -1,0 +1,22 @@
+body {
+  background-size: 100%; /* 화면 전체를 채우도록 설정 */
+  background-position: center; /* 이미지를 중앙 정렬 */
+  background-repeat: no-repeat; /* 이미지 반복 방지 */
+  background-attachment: fixed; /* 스크롤해도 배경 고정 */
+}
+
+body backgroundimage {
+  animation: zoomBackground 1s infinite alternate ease-in-out;
+}
+
+@keyframes zoomBackground {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
